@@ -1,12 +1,17 @@
 import { StatusBar } from 'expo-status-bar'
 import { StyleSheet, Text, View } from 'react-native'
+import { NavigationContainer } from '@react-navigation/native'
+
+import EstimateEditScreen from './app/screens/EstimateEditScreen'
+import EstimatesScreen from './app/screens/EstimatesScreen'
+import AppNavigator from './app/navigation/AppNavigator'
+import navigationTheme from './app/navigation/navigationTheme'
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Hello</Text>
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer theme={navigationTheme}>
+      <AppNavigator />
+    </NavigationContainer>
   )
 }
 
