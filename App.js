@@ -6,11 +6,14 @@ import EstimateEditScreen from './app/screens/EstimateEditScreen'
 import EstimatesScreen from './app/screens/EstimatesScreen'
 import AppNavigator from './app/navigation/AppNavigator'
 import navigationTheme from './app/navigation/navigationTheme'
+import AppFormSection from './app/components/Forms/AppFormModal'
+import useContacts from './app/hooks/useContacts'
 
 export default function App() {
+  const contactList = useContacts([])
   return (
     <NavigationContainer theme={navigationTheme}>
-      <AppNavigator />
+      <EstimateEditScreen />
     </NavigationContainer>
   )
 }

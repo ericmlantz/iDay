@@ -1,9 +1,13 @@
+//imported 3rd party libraries
 import { StyleSheet, TextInput, View } from 'react-native'
 import { MaterialCommunityIcons } from '@expo/vector-icons'
 
+//imported from this repo
 import defaultStyles from '../config/styles'
 
+//create a component
 const AppTextInput = ({ icon, width = '100%', ...otherProps }) => {
+  //render
   return (
     <View style={[styles.container, { width }]}>
       {icon && (
@@ -20,6 +24,7 @@ const AppTextInput = ({ icon, width = '100%', ...otherProps }) => {
         {...otherProps}
         width={width}
       />
+      
     </View>
   )
 }

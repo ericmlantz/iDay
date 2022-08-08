@@ -20,15 +20,15 @@ const AppFormPicker = ({
   return (
     <>
       <AppPicker
-        items={ items }
-        onSelectItem={ (item) => setFieldValue(name, item) }
-        numberOfColumns={ numberOfColumns }
-        PickerItemComponent={ PickerItemComponent }
-        placeholder={ placeholder }
-        selectedItem={ values[name] }
-        width={ width }
+        items={items}
+        onSelectItem={(item) => setFieldValue(name, item)}
+        numberOfColumns={numberOfColumns}
+        PickerItemComponent={PickerItemComponent}
+        placeholder={placeholder}
+        selectedItem={values[name]}
+        width={width}
       />
-      <ErrorMessage visible={ touched[name] } error={ errors[name] } />
+      <ErrorMessage visible={touched[name]} error={errors[name]} />
     </>
   )
 }
